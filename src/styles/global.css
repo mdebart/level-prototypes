@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+@import './tokens.css';
+
+/* Suisse Int'l @font-face lives in index.html (document-relative paths work on GitHub Pages). */
+
+*, *::before, *::after { box-sizing: border-box; }
+html, body, #root { height: 100%; margin: 0; }
+body {
+  background: #161617;
+  color: var(--lv-cotton);
+  font-family: var(--lv-font);
+  -webkit-font-smoothing: antialiased;
+}
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible { outline: 2px solid var(--lv-active); outline-offset: 4px; }
+img { display: block; }
+
+/* Embed mode: transparent so the host page shows through */
+body.is-embed { background: transparent; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

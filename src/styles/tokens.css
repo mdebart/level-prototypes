@@ -1,0 +1,58 @@
+/*
+  Level design tokens — pulled from the 📚 App Component Library (Figma)
+  Style Guide → Colors / Surfaces / Typography / Effects.
+  Keep names aligned with the Figma variable names so diffs stay readable.
+*/
+:root {
+  /* Primary */
+  --lv-cotton: #ffffff;
+  --lv-cotton-70: rgba(255, 255, 255, 0.7);
+  --lv-charcoal: #242426;
+  --lv-charcoal-70: rgba(36, 36, 38, 0.7);
+  --lv-slate: #3a3a3c;
+  --lv-slate-70: rgba(58, 58, 60, 0.7);
+
+  /* Secondary */
+  --lv-active: #6596ab;
+  --lv-success: #5e973a;
+  --lv-error: #c94633;
+
+  /* Surfaces */
+  --lv-linen: #d5cdc0;
+  --lv-bright-90: rgba(255, 255, 255, 0.9);
+  --lv-bright-60: rgba(255, 255, 255, 0.6);
+  --lv-bright-30: rgba(255, 255, 255, 0.3);
+  --lv-dim-5: rgba(58, 58, 60, 0.05);
+  --lv-dim-20: rgba(0, 0, 0, 0.2);
+  --lv-dim-60: rgba(0, 0, 0, 0.6);
+  --lv-stroke-slate-15: rgba(58, 58, 60, 0.15);
+  --lv-stroke-glass: rgba(255, 255, 255, 0.08);
+
+  /* Effects */
+  --lv-nav-shadow: drop-shadow(0 0 2px rgba(0, 0, 0, 0.16));
+  --lv-card-shadow: 0 16px 32px rgba(0, 0, 0, 0.24);
+  --lv-card-blur: blur(32px);
+  --lv-card-fill: linear-gradient(149.28deg, rgba(255, 255, 255, 0.1) 0%, rgba(58, 58, 60, 0.04) 82.475%);
+
+  /* Radii / spacing (8pt grid) */
+  --lv-radius-card: 24px;
+  --lv-radius-device: 32px;
+  --lv-space-1: 4px;
+  --lv-space-2: 8px;
+  --lv-space-3: 16px;
+  --lv-space-4: 24px;
+
+  /* Type — Suisse Int'l is licensed; drop the .woff2 files in /public/fonts
+     and the @font-face in fonts.css picks them up. Inter is the fallback. */
+  --lv-font: "Suisse Int'l", 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --lv-font-system: -apple-system, 'SF Pro Text', system-ui, sans-serif;
+}
+
+/* Typography styles (Figma text styles) */
+.lv-h1 { font: 300 32px/1.3 var(--lv-font); letter-spacing: 0.16px; }
+.lv-h2 { font: 400 26px/1.3 var(--lv-font); letter-spacing: 0.13px; }
+.lv-h3 { font: 400 22px/1.3 var(--lv-font); letter-spacing: 0.11px; }
+.lv-body1 { font: 400 16px/1.3 var(--lv-font); letter-spacing: 0.08px; }
+.lv-body2 { font: 400 14px/1.33 var(--lv-font); letter-spacing: 0.07px; }
+.lv-body3 { font: 400 12px/1.4 var(--lv-font); letter-spacing: 0.12px; }
+.lv-body4 { font: 400 10px/1.3 var(--lv-font); letter-spacing: 0.15px; }
