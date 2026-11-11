@@ -1,0 +1,46 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Button">
+<foreignObject x="-64" y="-64" width="328" height="328"><div xmlns="http://www.w3.org/1999/xhtml" style="backdrop-filter:blur(32px);clip-path:url(#bgblur_0_0_118_clip_path);height:100%;width:100%"></div></foreignObject><circle id="Blur Ring" data-figma-bg-blur-radius="64" cx="100" cy="100" r="100" fill="#3A3A3C" fill-opacity="0.05"/>
+<g id="Background">
+<ellipse cx="100" cy="100" rx="72" ry="72" fill="white" fill-opacity="0.3"/>
+<mask id="stroke0_0_118" fill="white">
+<path d="M172 100C172 139.765 139.764 172 100 172C60.2355 172 28 139.764 28 100C28 60.2355 60.2355 28 100 28C139.765 28 172 60.2355 172 100Z"/>
+</mask>
+<ellipse cx="100" cy="100" rx="72" ry="72" stroke-width="2" stroke="white" stroke-opacity="0.3" mask="url(#stroke0_0_118)"/>
+</g>
+<g id="Glow">
+<mask id="mask0_0_118" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="28" y="28" width="144" height="144">
+<circle id="mask" cx="100" cy="100" r="72" fill="white"/>
+</mask>
+<g mask="url(#mask0_0_118)">
+<g id="slate blurred circle" filter="url(#filter1_f_0_118)">
+<rect x="28" y="28" width="72" height="72" fill="white" fill-opacity="0.6"/>
+</g>
+<g id="cotton blurred circle" filter="url(#filter2_f_0_118)">
+<rect x="100" y="100" width="72" height="72" fill="url(#paint0_linear_0_118)"/>
+</g>
+</g>
+</g>
+<g id="Lock Icon">
+<path id="b" d="M87.9999 88H80V120H112V112H87.9999V88Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" fill-opacity="0.3"/>
+<path id="a" d="M112 112H120V80H88V88H112V112Z" fill-rule="evenodd" clip-rule="evenodd" fill="white" fill-opacity="0.3"/>
+</g>
+</g>
+<defs>
+<clipPath id="bgblur_0_0_118_clip_path" transform="translate(64 64)"><circle cx="100" cy="100" r="100" transform="rotate(-180 100 100)"/>
+</clipPath><filter id="filter1_f_0_118" x="-12" y="-12" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_0_118"/>
+</filter>
+<filter id="filter2_f_0_118" x="60" y="60" width="152" height="152" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="20" result="effect1_foregroundBlur_0_118"/>
+</filter>
+<linearGradient id="paint0_linear_0_118" x1="100" y1="100" x2="138.212" y2="170.806" gradientUnits="userSpaceOnUse">
+<stop stop-color="white" stop-opacity="0.1"/>
+<stop offset="1" stop-color="#3A3A3C" stop-opacity="0.04"/>
+</linearGradient>
+</defs>
+</svg>

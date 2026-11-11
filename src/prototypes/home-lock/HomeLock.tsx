@@ -75,7 +75,7 @@ export default function HomeLock() {
     <Device
       background={
         <div className={s.bg} aria-hidden>
-          <img src={asset('wallpaper-home.png')} alt="" />
+          <img src={asset('wallpaper-home.jpg')} alt="" />
           <div className={s.overlay} />
         </div>
       }
