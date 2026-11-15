@@ -1,0 +1,50 @@
+.orb {
+  --orb-dur: 900ms;
+  --orb-ease: cubic-bezier(0.15, 0.05, 0, 1);
+  position: relative;
+  width: 144px;
+  height: 144px;
+  border-radius: 50%;
+  transition: transform var(--orb-dur) var(--orb-ease), filter var(--orb-dur) var(--orb-ease);
+}
+.svg { display: block; overflow: visible; }
+
+/* Locked: Charcoal, shadow 0/0/4 16% */
+.orb[data-locked='true'] { filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.16)); }
+/* Unlocked: Cotton, shadow 0/-2/30 16% */
+.orb[data-locked='false'] { filter: drop-shadow(0 -2px 15px rgba(0, 0, 0, 0.16)); }
+
+/* Breathing step: 144 → 128 */
+.orb[data-contracted='true'] { transform: scale(0.8889); }
+
+.fill { transition: fill var(--orb-dur) var(--orb-ease); }
+.orb[data-locked='true'] .fill { fill: var(--lv-charcoal); }
+.orb[data-locked='false'] .fill { fill: var(--lv-cotton); }
+
+.glowLocked, .glowUnlocked { transition: opacity var(--orb-dur) var(--orb-ease); }
+.orb[data-locked='true'] .glowUnlocked { opacity: 0; }
+.orb[data-locked='false'] .glowLocked { opacity: 0; }
+
+.icon path { transition: fill var(--orb-dur) var(--orb-ease), fill-opacity var(--orb-dur) var(--orb-ease); }
+.orb[data-locked='true'] .icon path { fill: var(--lv-cotton); }
+.orb[data-locked='false'] .icon path { fill: var(--lv-charcoal); }
+.orb[data-contracted='true'] .icon path { fill-opacity: 0.7; }
+
+/* Icon halves: closed square when locked, spread 4px apart when unlocked */
+.halfA, .halfB { transition: transform var(--orb-dur) var(--orb-ease); }
+.orb[data-locked='true'] .halfB { transform: translate(4px, 12px); }
+.orb[data-locked='true'] .halfA { transform: translate(12px, 4px); }
+.orb[data-locked='false'] .halfB { transform: translate(0px, 18px); }
+.orb[data-locked='false'] .halfA { transform: translate(16px, 2px); }
+
+/* Error: Secondary/Error glow around the orb */
+.errorGlow {
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 70, 51, 0.0) 52%, rgba(201, 70, 51, 0.55) 62%, rgba(201, 70, 51, 0) 74%);
+  opacity: 0;
+  transition: opacity var(--orb-dur) var(--orb-ease);
+  pointer-events: none;
+}
+.orb[data-error='true'] .errorGlow { opacity: 1; }

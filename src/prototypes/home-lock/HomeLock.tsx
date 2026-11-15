@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { asset } from '../../asset'
 import { Device } from '../../components/Device'
+import { AppBackground } from '../../components/AppBackground'
 import { LockTile } from '../../components/LockTile'
 import { LockButton, type Operation } from '../../components/LockButton'
 import { Activity, type ActivityStatus } from '../../components/Activity'
@@ -73,12 +74,7 @@ export default function HomeLock() {
 
   return (
     <Device
-      background={
-        <div className={s.bg} aria-hidden>
-          <img src={asset('wallpaper-home.jpg')} alt="" />
-          <div className={s.overlay} />
-        </div>
-      }
+      background={<AppBackground />}
     >
       <button className={s.nav} onClick={() => setSheet('homes')} aria-label={`${home.name}, switch home`}>
         <span className="lv-h1">{home.name}</span>

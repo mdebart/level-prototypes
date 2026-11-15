@@ -1,4 +1,6 @@
 .tile {
+  position: relative;
+  isolation: isolate;
   width: 327px;
   padding: var(--lv-space-4);
   display: flex;
@@ -30,3 +32,13 @@
   display: grid;
   place-items: center;
 }
+
+.underlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  overflow: hidden;
+  pointer-events: none;
+}
+.header { z-index: 1; }
